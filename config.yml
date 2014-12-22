@@ -1,0 +1,8 @@
+
+##############################################
+## JHoneyNet - Created by Dylan Thomas Katz ##
+##############################################
+- listening-port: 22
+- logging-enabled: true       # Logs will be stored in the 'logs' folder
+- user: 'root'           # This can be set to '' to allow any username for root.
+- password: 'password1'  # This can be set to '' to allow any password for root.
