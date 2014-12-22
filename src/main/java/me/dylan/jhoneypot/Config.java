@@ -19,16 +19,20 @@ public class Config {
             +"\n##############################################"
             +"\n- listening-port: 22"
             +"\n- logging-enabled: true       # Logs will be stored in the 'logs' folder"
-            +"\n- user: 'root'           # This can be set to '' to allow any username for root."
+            +"\n- user: 'root'           # This can be set to '' to allow any username."
             +"\n- password: 'password1'  # This can be set to '' to allow any password for root.";
-    private Map keyValues = new HashMap<>();;
+    private Map keyValues = new HashMap<>();
+
     public Config(String path) throws IOException {
         File cfg = new File(path);
         if(!cfg.exists()) {
             cfg.createNewFile();
             PrintWriter out = new PrintWriter(new FileWriter(cfg));
             out.print(DEFAULT_CONFIG_CONTENTS);
+            out.flush();
+            out.close();
         }
+
         InputStream inputStream = new FileInputStream(cfg);
         Yaml yaml = new Yaml();
         try {

@@ -13,7 +13,7 @@ import java.util.List;
  */
 public class CommandRegistration {
     private static @Getter List<ShellCommand> commands = new ArrayList<>();
-    private static Reflections reflections = new Reflections("me.dylan.jhoneynet.commands");
+    private static Reflections reflections = new Reflections("me.dylan.jhoneypot.commands");
 
     public static void registerAll() throws IllegalAccessException, InstantiationException {
         for(Class<? extends ShellCommand> clasz : reflections.getSubTypesOf(ShellCommand.class)) {

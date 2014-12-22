@@ -23,7 +23,7 @@ public class HoneyFactory implements Command, Runnable {
     private static final Logger log = LoggerFactory.getLogger(HoneyFactory.class);
 
     public static final boolean IS_MAC_OSX = System.getProperty("os.name").startsWith("Mac OS X");
-    private static final String SHELL_PROMPT = "[admin@mainz %s]$ ";
+    private static final String SHELL_PROMPT = "[root %s]$ ";
     private static final String THREAD_NAME = "HoneyFactory";
     public static String location = "~";
     private InputStream in;
