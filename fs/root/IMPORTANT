@@ -1,0 +1,5 @@
+Simple cmds:
+cat <file> ~ read <file>
+cd <directory> ~ move to <directory>
+rm <file> ~ deletes <file> ~ USE THIS WITH CAUTION, ONLY DELETE FILES I GIVE YOU PERMISSION TO DELETE!
+mkdir <directory> ~ makes a folder named <directory>
