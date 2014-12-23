@@ -13,7 +13,8 @@
         <dependency>
             <groupId>org.apache.sshd</groupId>
             <artifactId>apache-sshd</artifactId>
-            <version>0.12.0</version>
+            <version>0.13.0</version>
+            <type>pom</type>
         </dependency>
         <dependency>
             <groupId>org.yaml</groupId>
